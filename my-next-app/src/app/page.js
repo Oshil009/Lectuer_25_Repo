@@ -7,7 +7,7 @@ const Home = async () => {
     <div>
       {posts && posts.map((elem) => {
         return (
-          <Link href={`https://lectuer-25-repo.vercel.app/posts/${elem.id}`} key={elem.id} className="post-card">
+          <Link href={`/posts/${elem.id}`} key={elem.id} className="post-card">
             <div className="post-id">#{elem.id}</div>
                         <div className="post-content">
                             <h3 className="post-heading">{elem.title}</h3>
